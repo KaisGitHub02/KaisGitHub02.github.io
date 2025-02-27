@@ -159,7 +159,7 @@
 
 @media (max-width: 650px) {
     .popular-course .course-item-wrapper .item .img-holder img,.course-page-single .popular-course .course-item-wrapper img {margin: 0 auto;}
-    .owl-theme .owl-dots {display: none !important;}
+    .owl-theme .owl-dots {display: block !important;}
     .our-certification .item img {margin: 0 auto;}
     .latest-event-slider .item>img,.course-page-single .popular-course .course-item-wrapper [class*="col-"] {width:100%;}
     .contact-us-form #success,
@@ -203,7 +203,7 @@
    .main-menu-wrapper .logo {top:196px;left:15px;}
    .main-menu-wrapper form {position: relative;width:100%;margin: 0 0 20px 0;left:auto;}
    .navbar-collapse,.navbar-collapse.collapse.in {padding-left: 0;padding-right: 0;}
-   .main-menu-wrapper.fixed form,header .top-header div.right-side {display: none;}
+   .main-menu-wrapper.fixed form,header .top-header div.right-side {display: block;}
    .main-menu-wrapper.fixed .logo {top:0;}
    .scroll-top {right:5px; bottom: 15px;}
    .course-v2 .single-course .course-heading ul li {display: block;margin: 0 0 5px 0;}

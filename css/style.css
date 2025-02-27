@@ -799,6 +799,7 @@ header.inner-header .top-header {
   margin:20px 20px 0 20px;
 }
 /*=========================== Popular Course =================*/
+/*=========================== Popular Course =================*/
 .popular-course {
   padding: 90px 0 95px 0;
   margin: 95px 0 0 0;
@@ -838,7 +839,7 @@ header.inner-header .top-header {
 }
 .popular-course .course-item-wrapper .item:hover .text,
 .popular-course .course-item-wrapper [class*="col-"]:hover .text {
-  border-color: #53960f;
+  border-color: #cd2122;
 }
 .popular-course .course-item-wrapper .text h4 a {
   text-transform: uppercase;
@@ -866,7 +867,7 @@ header.inner-header .top-header {
 .popular-course .course-item-wrapper .text>ul li {
   display: inline-block;
   margin: 0 2px;
-  color:#53960f;
+  color:#cd2122;
 }
 .popular-course .course-item-wrapper .text>ul li .fa-star-o {
   color:#6f6f6f;
@@ -912,7 +913,7 @@ header.inner-header .top-header {
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #53960f;
+  background: #cd2122;
 }
 .popular-course .owl-theme .owl-nav  {
   margin-top: 40px;
@@ -1548,15 +1549,14 @@ footer .bottom-footer a:hover {
 }
 .our-teacher .item .img-holder {
   position: relative;
-  width:230px;
-  height:230px;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
   margin: 0 auto;
 }
 .our-teacher .item .img-holder img {
-  width:230px;
-  height:230px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
 }
 .our-teacher .item h6 {
   font-size: 18px;
@@ -1585,13 +1585,13 @@ footer .bottom-footer a:hover {
 }
 .our-teacher .item .img-holder .overlay ul li {
   display: inline-block;
-  margin: 92px 1px 0 1px;
+  margin: 130px 1px 0 1px;
 }
 .our-teacher .item .img-holder .overlay ul li a {
-  width:45px;
-  height:45px;
+  width:55px;
+  height:55px;
   border:1px solid #fff;
-  line-height: 43px;
+  line-height: 53px;
   color:#fff;
 }
 .our-teacher .item-wrapper:hover .img-holder .overlay {
@@ -1617,7 +1617,7 @@ footer .bottom-footer a:hover {
   text-transform: uppercase;
 }
 
-.event-section.latest-event-slider {
+event-section.latest-event-slider {
   margin: 88px 0 115px 0;
 }
 .our-certification {
@@ -1632,6 +1632,7 @@ footer .bottom-footer a:hover {
     -o-border-image: url(../images/inner-page/pattern.jpg) 4 stretch; /* Opera 11-12.1 */
     border-image: url(../images/inner-page/pattern.jpg) 4 stretch;
 }
+
 /*========================= FAQ Page =====================*/
 .faq-page h4 {
   text-transform: uppercase;

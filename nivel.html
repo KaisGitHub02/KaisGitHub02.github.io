@@ -130,7 +130,7 @@
 											<ul class="sub-menu">
 												<li><a href="nivel.html" class="tran3s">Prueba de Nivel</a></li>
 												<li><a href="examenes.html" class="tran3s">Examenes Oficiales</a></li>
-												<!--<li><a href="idiomas.html" class="tran3s">Otros idiomas</a></li>-->
+												<li><a href="blog.html" class="tran3s">Blog</a></li>
 											</ul>
 										</li>
 										<li class="dropdown-holder">
@@ -171,6 +171,7 @@
 
 
 <!-- Sección de Prueba de Nivel -->
+ <!--
 <div class="container">
     <h2 class="text-center">Test de Nivel de Inglés</h2>
     <p class="text-center">Responde las siguientes preguntas para conocer tu nivel.</p>
@@ -584,6 +585,65 @@
         document.getElementById("result").innerText = "Tu nivel estimado es: " + resultText;
     }
 </script>
+-->
+
+<!-- Contact Us Form _____________________ -->
+<div class="contact-us-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 wow fadeInLeft">
+                <div class="contact-us-form">
+                    <h3>Envía tu solicitud de Examen <span class="p-color">TOTALMENTE GRATIS</span></h3>
+                    <p>Los datos no serán publicados.</p>
+                    <form id="contact-form" onsubmit="sendWhatsApp(event)">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input id="name" type="text" placeholder="Nombre Completo" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input id="test-date" type="text" placeholder="¿Cuándo quieres hacer el simulacro?" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input id="current-level" type="text" placeholder="Nivel Actual (0-C1)" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <input id="required-level" type="text" placeholder="Nivel Requerido (A2-C2)" required>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <input id="exam-type" type="text" placeholder="Tipo de Examen Requerido (Aptis...)" required>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <button class="tran3s p-color-bg themehover" type="submit">Enviar vía WhatsApp</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <script>
+                    function sendWhatsApp(event) {
+                        event.preventDefault();
+                        let name = document.getElementById("name").value;
+                        let testDate = document.getElementById("test-date").value;
+                        let currentLevel = document.getElementById("current-level").value;
+                        let requiredLevel = document.getElementById("required-level").value;
+                        let examType = document.getElementById("exam-type").value;
+                        let phoneNumber = "34622854358";
+                        
+                        let whatsappMessage = `👋 Hola, quiero solicitar un examen de simulacro:
+                        📝 *Nombre:* ${name}
+                        📅 *Fecha de Prueba:* ${testDate}
+                        📌 *Nivel Actual:* ${currentLevel}
+                        🎯 *Nivel Requerido:* ${requiredLevel}
+                        📝 *Tipo de Examen:* ${examType}`;
+                        
+                        let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+                        window.open(whatsappURL, "_blank");
+                    }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <br><br>
 	        <!-- Banner Informativo _______________________ -->
@@ -601,7 +661,8 @@
 
 
 	        <!-- Footer ______________________________ -->
-	        <footer>
+	        
+            <footer>
 				<div class="top-footer">
 					<div class="container">
 						<div class="row d-flex justify-content-between">
