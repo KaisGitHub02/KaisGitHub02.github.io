@@ -816,6 +816,9 @@ header.inner-header .top-header {
 }
 .popular-course .course-item-wrapper .item .img-holder img,
 .popular-course .course-item-wrapper .single-course-item .img-holder img {
+  width: 500px; /* Ajusta este valor según el tamaño deseado */
+  height: 200px; /* Ajusta este valor según el tamaño deseado */
+  object-fit: cover; /* Esto asegura que la imagen se ajuste sin distorsionarse */
   -webkit-transition: all .5s ease-in-out;
      -moz-transition: all .5s ease-in-out;
       -ms-transition: all .5s ease-in-out;
@@ -2953,4 +2956,245 @@ text-transform: uppercase;
 	font-size:12px;
 	color:#ff0000;
 	font-weight:500;	
+}
+
+/*=========================== Intensive Courses =================*/
+.intensive-courses {
+  padding: 90px 0 95px 0;
+  margin: 95px 0 0 0;
+}
+.intensive-courses.mFix {
+  margin-top: 0;
+}
+.intensive-courses h2 {
+  text-align: center;
+}
+.intensive-courses .course-item-wrapper .item .img-holder,
+.intensive-courses .course-item-wrapper .single-course-item .img-holder {
+  overflow: hidden;
+}
+.intensive-courses .course-item-wrapper .item .img-holder img,
+.intensive-courses .course-item-wrapper .single-course-item .img-holder img {
+ 
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .5s ease-in-out;
+      -ms-transition: all .5s ease-in-out;
+       -o-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+}
+.intensive-courses .course-item-wrapper .item:hover .img-holder img,
+.intensive-courses .course-item-wrapper .single-course-item:hover .img-holder img {
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.intensive-courses .course-item-wrapper .text {
+  background: #fff;
+  text-align: center;
+  border-bottom: 12px solid #fbdada;
+  position: relative;
+}
+.intensive-courses .course-item-wrapper .item:hover .text,
+.intensive-courses .course-item-wrapper [class*="col-"]:hover .text {
+  border-color: #cd2122;
+}
+.intensive-courses .course-item-wrapper .text h4 a {
+  text-transform: uppercase;
+  color: #333333;
+  margin: 25px 0 18px 0;
+}
+.intensive-courses .course-item-wrapper .text h6 {
+  font-size: 14px;
+  color: #6f6f6f;
+  margin: 8px 0 4px 0;
+}
+.intensive-courses .course-item-wrapper .text .img {
+  width: 52px;
+  height: 52px;
+  background: #d74848;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.intensive-courses .course-item-wrapper .text .img img {
+  margin: 0 auto;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+.intensive-courses .course-item-wrapper .text>ul li {
+  display: inline-block;
+  margin: 0 2px;
+  color: #cd2122;
+}
+.intensive-courses .course-item-wrapper .text>ul li .fa-star-o {
+  color: #6f6f6f;
+}
+.intensive-courses .course-item-wrapper .text p {
+  padding: 22px 50px 20px 50px;
+  border-bottom: 1px solid #d7d8db;
+}
+.intensive-courses .course-item-wrapper .text>div.clear-fix {
+  padding: 20px;
+}
+.intensive-courses .course-item-wrapper .text>div ul li {
+  display: inline-block;
+  line-height: 15px;
+  border-right: 1px solid #d7d8db;
+  padding-right: 8px;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+.intensive-courses .course-item-wrapper .text>div ul li i {
+  margin-right: 3px;
+}
+.intensive-courses .course-item-wrapper .text>div ul li:last-child {
+  border: none;
+}
+.intensive-courses .course-item-wrapper .text>div a {
+  width: 75px;
+  line-height: 35px;
+  color: #fff;
+}
+.intensive-courses .course-item-wrapper .item {
+  margin: 60px 15px 10px 15px;
+}
+.owl-theme .owl-nav {
+  margin: 0;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 16px;
+  height: 16px;
+  background: #fbdada;
+  opacity: 1;
+  margin: 0 4px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #cd2122;
+}
+.intensive-courses .owl-theme .owl-nav {
+  margin-top: 40px;
+}
+
+/*=========================== Examen Courses =================*/
+.examen-courses {
+  padding: 90px 0 95px 0;
+  margin: 95px 0 0 0;
+}
+.examen-courses.mFix {
+  margin-top: 0;
+}
+.examen-courses h2 {
+  text-align: center;
+}
+.examen-courses .course-item-wrapper .item .img-holder,
+.examen-courses .course-item-wrapper .single-course-item .img-holder {
+  overflow: hidden;
+}
+.examen-courses .course-item-wrapper .item .img-holder img,
+.examen-courses .course-item-wrapper .single-course-item .img-holder img {
+  width: 400px; /* Ajusta este valor según el tamaño deseado */
+  height: 200px; /* Ajusta este valor según el tamaño deseado */
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .5s ease-in-out;
+      -ms-transition: all .5s ease-in-out;
+       -o-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+}
+.examen-courses .course-item-wrapper .item:hover .img-holder img,
+.examen-courses .course-item-wrapper .single-course-item:hover .img-holder img {
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.examen-courses .course-item-wrapper .text {
+  background: #fff;
+  text-align: center;
+  border-bottom: 12px solid #fbdada;
+  position: relative;
+}
+.examen-courses .course-item-wrapper .item:hover .text,
+.examen-courses .course-item-wrapper [class*="col-"]:hover .text {
+  border-color: #cd2122;
+}
+.examen-courses .course-item-wrapper .text h4 a {
+  text-transform: uppercase;
+  color: #333333;
+  margin: 25px 0 18px 0;
+}
+.examen-courses .course-item-wrapper .text h6 {
+  font-size: 14px;
+  color: #6f6f6f;
+  margin: 8px 0 4px 0;
+}
+.examen-courses .course-item-wrapper .text .img {
+  width: 52px;
+  height: 52px;
+  background: #d74848;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.examen-courses .course-item-wrapper .text .img img {
+  margin: 0 auto;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+.examen-courses .course-item-wrapper .text>ul li {
+  display: inline-block;
+  margin: 0 2px;
+  color: #cd2122;
+}
+.examen-courses .course-item-wrapper .text>ul li .fa-star-o {
+  color: #6f6f6f;
+}
+.examen-courses .course-item-wrapper .text p {
+  padding: 22px 50px 20px 50px;
+  border-bottom: 1px solid #d7d8db;
+}
+.examen-courses .course-item-wrapper .text>div.clear-fix {
+  padding: 20px;
+}
+.examen-courses .course-item-wrapper .text>div ul li {
+  display: inline-block;
+  line-height: 15px;
+  border-right: 1px solid #d7d8db;
+  padding-right: 8px;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+.examen-courses .course-item-wrapper .text>div ul li i {
+  margin-right: 3px;
+}
+.examen-courses .course-item-wrapper .text>div ul li:last-child {
+  border: none;
+}
+.examen-courses .course-item-wrapper .text>div a {
+  width: 75px;
+  line-height: 35px;
+  color: #fff;
+}
+.examen-courses .course-item-wrapper .item {
+  margin: 60px 15px 10px 15px;
+}
+.owl-theme .owl-nav {
+  margin: 0;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 16px;
+  height: 16px;
+  background: #fbdada;
+  opacity: 1;
+  margin: 0 4px;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #cd2122;
+}
+.examen-courses .owl-theme .owl-nav {
+  margin-top: 40px;
 }
