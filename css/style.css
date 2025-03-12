@@ -1098,14 +1098,23 @@ header.inner-header .top-header {
 }
 .latest-news .img-holder {
   position: relative;
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  height: 250px; /* Altura fija para todas las imágenes (ajústala según necesites) */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+}
+.latest-news .img-holder img {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 100%; /* La imagen ocupa toda la altura del contenedor */
+  object-fit: cover; /* Ajusta la imagen recortándola si es necesario para llenar el contenedor */
+  display: block; /* Elimina espacios no deseados debajo de la imagen */
 }
 .latest-news .img-holder .date {
-  width:66px;
-  height:66px;
-  color:#fff;
+  width: 66px;
+  height: 66px;
+  color: #fff;
   position: absolute;
-  top:-33px;
-  left:50%;
+  top: 10px; /* Ajustado para que esté dentro del contenedor */
+  left: 50%;
   margin-left: -33px;
   z-index: 2;
   text-transform: uppercase;
@@ -1114,6 +1123,8 @@ header.inner-header .top-header {
   font-size: 36px;
   line-height: 30px;
   padding-top: 7px;
+  background-color: #28a745; /* Color verde para la fecha, ajustado según la imagen */
+  border-radius: 50%; /* Hacer el círculo */
 }
 .latest-news .img-holder .date span {
   font-weight: normal;
@@ -1122,22 +1133,22 @@ header.inner-header .top-header {
 }
 .latest-news .img-holder a {
   position: absolute;
-  width:100%;
+  width: 100%;
   height: 100%;
   background: rgba(255,255,255,0.7);
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   opacity: 0;
   -webkit-transform: rotateX(90deg);
      -moz-transform: rotateX(90deg);
       -ms-transform: rotateX(90deg);
        -o-transform: rotateX(90deg);
           transform: rotateX(90deg);
-    -webkit-transform-origin:0% 0%;
-       -moz-transform-origin:0% 0%;
-        -ms-transform-origin:0% 0%;
-         -o-transform-origin:0% 0%;
-            transform-origin:0% 0%;
+    -webkit-transform-origin: 0% 0%;
+       -moz-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+         -o-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
 }
 .latest-news .single-post:hover .img-holder a {
   opacity: 1;
@@ -1160,7 +1171,7 @@ header.inner-header .top-header {
   font-size: 16px;
   text-transform: uppercase;
   display: block;
-  color:#333333;
+  color: #333333;
   padding-bottom: 19px;
 }
 .latest-news .single-post:hover .text-wrapper .text {
@@ -1168,7 +1179,7 @@ header.inner-header .top-header {
 }
 .latest-news .single-post:hover .text-wrapper .text a,
 .latest-news .single-post:hover .text-wrapper .text p {
-  color:#fff;
+  color: #fff;
 }
 .latest-news .row {
   margin-top: 50px;
